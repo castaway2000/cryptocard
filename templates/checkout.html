@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<form action="/" method="POST">
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_pSz7vBBqTGquaaRWmp4QtELw"
+        data-amount="100"
+        data-label="Buy a BitCoin GiftWallet"
+        data-name="Your APp"
+        data-description="Your Product"
+        data-image="Link to your logo"
+        data-currency="usd"
+        data-billingAddress="true"
+        data-shippingAddress="true">
+    </script>
+</form>{% endblock %}

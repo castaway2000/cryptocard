@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div>
+            <h3>Give the gift of cryptocurency!</h3>
+            <p>Purchase and send GiftWallets to your loved ones for the holdiays</p>
+        </div>
+        <div class="row  pt-5">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'bitcoin.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">BitCoin</h4>
+                        <form action="#" method="POST" id="1" name="btc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="100"
+                                data-label="Gift $100 in Bitcoin"
+                                data-name="giftcrypto.cards"
+                                data-description="$100 Bitcoin GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'etherium.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Etherium</h4>
+                        <form action="#" method="POST" id="2" name="eth">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="20"
+                                data-label="Gift $20 in Etherium"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'ltc800.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">LiteCoin</h4>
+                        <form action="#" method="POST" id="2" name="ltc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="20"
+                                data-label="Gift $20 in LiteCoin"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+            <div class="row  pt-5">
+                <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'bitcoin.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">BitCoin</h4>
+                        <form action="#" method="POST" id="4" name="btc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="250"
+                                data-label="Gift $250 in Bitcoin"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'etherium.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Etherium</h4>
+                        <form action="#" method="POST" id="3" name="eth">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="50"
+                                data-label="Gift $50 in Etherium"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'ltc800.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title text-center">LiteCoin</h4>
+                        <form action="#" method="POST" id="4" name="ltc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="50"
+                                data-label="Gift $50 in LiteCoin"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+            <div class="row pt-5">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'bitcoin.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">BitCoin</h4>
+                        <form action="#" method="POST" id="5" name="btc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="100"
+                                data-label="Gift $500 in Bitcoin"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'etherium.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Etherium</h4>
+                        <form action="#" method="POST" id="1" name="eth">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="100"
+                                data-label="Gift $100 in Etherium"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="{% static 'ltc800.png' %}" alt="Card image cap" style="height: 300px">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">LiteCoin</h4>
+                        <form action="#" method="POST" id="1" name="ltc">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                data-key="{{ stripe.key }}"
+                                data-amount="100"
+                                data-label="Gift $100 in LiteCoin"
+                                data-name="GiftCrypto"
+                                data-description="CryptoCurrency GiftWallet"
+                                data-image={% static 'logo.png' %}
+                                data-currency="usd"
+                                data-billingAddress="true"
+                                data-shippingAddress="true">
+                            </script>
+                        </form>                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="gap"></div>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}
+
+<footer id="main-footer" class="mt-5">
+    <div class="container">
+        <div class="row row-wrap">
+            <div class="col-md-1">
+                <a class="logo" href="/">
+                    <img src="{% static 'doge.jpeg' %}" class="footer-logo" style="height: 100px"
+                         alt="CryptoGift logo" title="CryptoGift logo" />
+                </a>
+            </div>
+            <div class="col-md-4 ml-2">
+                <small>
+                Crypto GiftWallet copyright 2017
+                <br/>
+                A product of Saber Applications Inc.
+                <br/>
+                1037 NE 65th ST #80639
+                Seattle, WA 98115
+                USA
+                </small>
+            </div>
+            <div class="col-md-4">
+                <ul class="list list-footer">
+                    <li><a href="{% url 'faq' %}">F.A.Q</a>
+                    </li>
+                    <li><a href="{% url 'tos' %}">Terms of Use</a>
+                    </li>
+                    <li><a href="{% url 'contact' %}">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
